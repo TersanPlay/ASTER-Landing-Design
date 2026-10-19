@@ -15,17 +15,18 @@
   </p>
 </div>
 ---
-Overview
+## Overview
 ASTER Landing Design is a portable, vendor-neutral skill package for AI agents that create, personalize, refactor and audit high-quality landing pages.
 It combines:
-a corporate visual direction;
-atmospheric layout composition;
-Acrylic / Mica-like glass materials;
-light and dark theme guidance;
-and production-minded accessibility rules.
+
+- Corporate visual direction and typographic hierarchy
+- Atmospheric layout composition
+- Acrylic / Mica-like glass materials
+- Light and dark theme guidance
+- Production-minded accessibility rules
 ASTER is not a UI framework, browser extension or design editor. It is an instruction system built around `SKILL.md` and a focused reference library.
 ---
-Professional identity
+## Professional identity
 <table>
 <tr>
 <td width="25%" align="center">
@@ -41,27 +42,28 @@ Professional identity
 </td>
 </tr>
 </table>
-For logo rules, color direction and usage recommendations, see docs/BRAND-IDENTITY.md.
+For logo rules, color direction and usage recommendations, see **[Brand Identity](docs/BRAND-IDENTITY.md)**.
 ---
-What this skill helps agents do
-Area	Capabilities
-Design	Create professional landing pages with original composition, strong hierarchy and a premium visual tone
-Customization	Adapt palette, type, spacing, brand tone and CTAs without breaking the existing stack
-Implementation	Work with React, Next.js, Vue, Nuxt, Svelte, Astro or plain HTML/CSS/JS
-Quality	Review accessibility, responsiveness, interaction quality and consistency
-Documentation	Explain layout decisions, tokens, components and verification steps
+## What this skill helps agents do
+| Area | Capabilities |
+| --- | --- |
+| **Design** | Create professional landing pages with original composition, strong hierarchy and a premium visual tone |
+| **Customization** | Adapt palette, type, spacing, brand tone and CTAs without breaking the existing stack |
+| **Implementation** | Work with React, Next.js, Vue, Nuxt, Svelte, Astro or plain HTML/CSS/JS |
+| **Quality** | Review accessibility, responsiveness, interaction quality and consistency |
+| **Documentation** | Explain layout decisions, tokens, components and verification steps |
 ---
-Core design language
-1) Corporate, calm, technological
+## Core design language
+### 1. Corporate, calm, technological
 ASTER is designed for a more mature and credible presentation style. It favors dark navy foundations, refined blues, structured typography and disciplined use of motion and translucency.
-2) Glass with restraint
+### 2. Glass with restraint
 The system supports Acrylic-like and Mica-like surfaces, but the effect must remain readable, elegant and useful. Glass is a supporting material, not a gimmick.
-3) Stack-preserving implementation
+### 3. Stack-preserving implementation
 The skill adapts to the project's existing framework and styling strategy instead of forcing a migration.
-4) Real-world documentation quality
+### 4. Real-world documentation quality
 The repository presentation should feel like a serious software asset, with a clear identity, installation guidance, usage examples and practical references.
 ---
-Quick start
+## Quick start
 If your platform supports Agent Skills installation:
 ```bash
 npx skills add TersanPlay/ASTER-Landing-Design
@@ -70,11 +72,11 @@ Or clone the repository manually:
 ```bash
 git clone https://github.com/TersanPlay/ASTER-Landing-Design.git
 ```
-Then place the extracted skill folder in a supported skills directory as described in INSTALLATION.md.
-Example prompt
+Then place the extracted skill folder in a supported skills directory as described in **[INSTALLATION.md](INSTALLATION.md)**.
+### Example prompt
 > Use `aster-landing-design` to create a professional responsive landing page for my SaaS product. Keep my existing framework. Use ASTER visual foundations, a dark/light theme strategy, restrained glass surfaces and a clear conversion flow.
 ---
-Package structure
+## Package structure
 ```text
 ASTER-Landing-Design/
 ├── SKILL.md
@@ -104,7 +106,7 @@ ASTER-Landing-Design/
     └── validate_skill.py
 ```
 ---
-Included references
+## Included references
 Foundations — spacing, typography, color roles, motion and geometry.
 Layouts — landing-page structures and conversion patterns.
 Glass materials — Acrylic / Mica-like surfaces and fallback behavior.
@@ -113,12 +115,12 @@ Frameworks — implementation guidance per stack.
 Quality checklist — acceptance criteria for design, accessibility and engineering.
 Content and copy — writing structure, SEO and narrative hierarchy.
 ---
-Validation
+## Validation
 ```bash
 python scripts/validate_skill.py
 ```
 This script verifies the expected structure of the ASTER skill package. It does not replace manual UI review, browser testing or accessibility verification.
 ---
-Philosophy
+## Philosophy
 > **Professional by default. Flexible by design. Clear in execution.**
 ASTER aims to help agents produce landing pages that look credible, feel polished and remain implementable across modern frontend environments.
