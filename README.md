@@ -1,205 +1,124 @@
 <div align="center">
-
-# ✳ ASTER
-### LANDING DESIGN · UNIVERSAL AGENT SKILL
-
-**Build remarkable landing pages. Keep your stack. Own your aesthetic.**
-
-A framework-agnostic design intelligence package for AI coding agents, combining atmospheric art direction, reusable foundations, frosted-glass materials and production-minded accessibility.
-
-[![Agent Skills](https://img.shields.io/badge/Agent_Skills-compatible-315A94?style=flat-square)](https://agentskills.io/specification)
-[![Version](https://img.shields.io/badge/version-1.0.0-153653?style=flat-square)](SKILL.md)
-[![License MIT](https://img.shields.io/badge/license-MIT-214F6B?style=flat-square)](LICENSE)
-[![Framework agnostic](https://img.shields.io/badge/framework-agnostic-2A496E?style=flat-square)](references/05-frameworks.md)
-
-[Get started](#quick-start) · [Explore design language](#design-language) · [Installation](INSTALLATION.md) · [Skill specification](SKILL.md)
-
+  <img src="docs/brand/aster-wordmark.svg" alt="ASTER Landing Design" width="760" />
+<p><strong>Professional landing-page design intelligence for AI coding agents and modern IDE workflows.</strong></p>
+<p>
+    <a href="https://agentskills.io/specification"><img alt="Agent Skills" src="https://img.shields.io/badge/Agent%20Skills-compatible-315A94?style=flat-square"></a>
+    <a href="./SKILL.md"><img alt="Version" src="https://img.shields.io/badge/version-1.0.0-153653?style=flat-square"></a>
+    <a href="./LICENSE"><img alt="License MIT" src="https://img.shields.io/badge/license-MIT-214F6B?style=flat-square"></a>
+    <a href="./references/05-frameworks.md"><img alt="Framework agnostic" src="https://img.shields.io/badge/framework-agnostic-2A496E?style=flat-square"></a>
+  </p>
+<p>
+    <a href="#quick-start">Quick start</a> ·
+    <a href="./INSTALLATION.md">Installation</a> ·
+    <a href="./SKILL.md">Skill</a> ·
+    <a href="./docs/BRAND-IDENTITY.md">Brand identity</a>
+  </p>
 </div>
-
-![ASTER desktop design preview](docs/images/aster-desktop-preview.svg)
-
-> **Visual preview:** the image above is an original, conceptual ASTER composition, **not** a captured browser screenshot or a claim of pixel-perfect implementation. A dependency-free working demo ships in [assets/landing-starter.html](assets/landing-starter.html).
-
 ---
-
-## One design language. Many possibilities.
-
-ASTER Landing Design helps AI agents **create, personalize, refactor and audit** high-quality landing pages. It is a portable **Agent Skill**, not a React dependency, no-code editor, browser extension or proprietary visual framework. The agent reads [SKILL.md](SKILL.md) and loads focused references when needed.
-
-| Design | Engineering | Experience |
-| :--- | :--- | :--- |
-| Editorial hero composition | Existing framework preserved | Responsive by default |
-| Atmospheric depth and gradients | Semantic CSS design tokens | Keyboard and focus states |
-| Acrylic / Mica-like glass | Stack-specific integration guidance | Reduced-motion / transparency fallbacks |
-| Light and dark themes | Reusable component contracts | Accessibility and QA checklist |
-
-## See the language in action
-
+Overview
+ASTER Landing Design is a portable, vendor-neutral skill package for AI agents that create, personalize, refactor and audit high-quality landing pages.
+It combines:
+a corporate visual direction;
+atmospheric layout composition;
+Acrylic / Mica-like glass materials;
+light and dark theme guidance;
+and production-minded accessibility rules.
+ASTER is not a UI framework, browser extension or design editor. It is an instruction system built around `SKILL.md` and a focused reference library.
+---
+Professional identity
 <table>
 <tr>
-<td width="67%" valign="top">
-
-**Desktop · atmospheric composition**
-
-![Desktop atmospheric ASTER concept](docs/images/aster-desktop-preview.svg)
-
-A hero-led visual direction with strong hierarchy, diffuse illumination and layered workspace surfaces.
-
+<td width="25%" align="center">
+  <img src="docs/brand/aster-logo-icon-dark.svg" alt="ASTER icon dark" width="180" />
+  <br/><sub>Primary icon · dark</sub>
 </td>
-<td width="33%" valign="top">
-
-**Mobile · considered reflow**
-
-![Mobile ASTER concept](docs/images/aster-mobile-preview.svg)
-
-A vertically composed interface that keeps hierarchy, touch targets and glass material readability intact.
-
+<td width="25%" align="center">
+  <img src="docs/brand/aster-logo-icon-light.svg" alt="ASTER icon light" width="180" />
+  <br/><sub>Alternate icon · light</sub>
+</td>
+<td width="50%" valign="middle">
+  The ASTER identity is centered on a refined <strong>stylized letter A</strong>, created to feel more professional, software-oriented and presentation-ready. The symbol replaces earlier decorative explorations and becomes the recommended mark for README, documentation headers and presentation surfaces.
 </td>
 </tr>
 </table>
-
-*Both visuals are design previews authored for the README. They are not screenshots of the runnable starter. For source-based browser captures, see [Screenshot production](#screenshot-production).*
-
-## Design language
-
-### 01 — Atmospheric, not ornamental
-
-Dark navy bases, restrained electric blues, editorial whitespace and softly focused illumination establish atmosphere without sacrificing content readability.
-
-### 02 — Glass with purpose
-
-ASTER provides three optical intensities and two conceptual material families:
-
-| Material | Primary use | Typical behavior |
-| :--- | :--- | :--- |
-| **Mica-like** | Persistent app shells and navigation | Subtle, relatively opaque surfaces |
-| **Acrylic-like** | Floating UI, popovers and overlays | Backdrop blur and separation |
-| **Subtle** | Quiet layering | 10px blur reference |
-| **Standard** | Balanced panels | 22px blur reference |
-| **Strong** | Distinct floating layers | 36px blur reference |
-
-Always use adequate text contrast and opaque fallbacks. The names describe CSS interpretations inspired by current desktop UI conventions, not proprietary Microsoft implementations. See [Glass Materials](references/03-glass-materials.md).
-
-### 03 — Adaptable foundations
-
-ASTER establishes semantic roles for background, foreground, surface, border, focus and actions. Its starter palette is a design proposal—not colors claimed to be extracted from DeepSeek's source code.
-
-```css
-@import "./aster-tokens.css";
-
-.product-panel {
-  color: var(--aster-color-fg);
-  background: var(--aster-color-surface);
-  border: 1px solid var(--aster-color-border);
-  border-radius: var(--aster-radius-lg);
-}
-```
-
-### 04 — Original compositions
-
-Use ASTER as a **system of decisions**, not a template that duplicates the same hero or three-card layout for every site. Adapt visual rhythm, information architecture and sections to the audience, proposition and primary CTA.
-
-## Quick start
-
-Install via an Agent Skills-compatible installer, if your platform supports it:
-
+For logo rules, color direction and usage recommendations, see docs/BRAND-IDENTITY.md.
+---
+What this skill helps agents do
+Area	Capabilities
+Design	Create professional landing pages with original composition, strong hierarchy and a premium visual tone
+Customization	Adapt palette, type, spacing, brand tone and CTAs without breaking the existing stack
+Implementation	Work with React, Next.js, Vue, Nuxt, Svelte, Astro or plain HTML/CSS/JS
+Quality	Review accessibility, responsiveness, interaction quality and consistency
+Documentation	Explain layout decisions, tokens, components and verification steps
+---
+Core design language
+1) Corporate, calm, technological
+ASTER is designed for a more mature and credible presentation style. It favors dark navy foundations, refined blues, structured typography and disciplined use of motion and translucency.
+2) Glass with restraint
+The system supports Acrylic-like and Mica-like surfaces, but the effect must remain readable, elegant and useful. Glass is a supporting material, not a gimmick.
+3) Stack-preserving implementation
+The skill adapts to the project's existing framework and styling strategy instead of forcing a migration.
+4) Real-world documentation quality
+The repository presentation should feel like a serious software asset, with a clear identity, installation guidance, usage examples and practical references.
+---
+Quick start
+If your platform supports Agent Skills installation:
 ```bash
 npx skills add TersanPlay/ASTER-Landing-Design
 ```
-
-Alternatively clone and copy the skill folder into your agent's supported skills directory:
-
+Or clone the repository manually:
 ```bash
 git clone https://github.com/TersanPlay/ASTER-Landing-Design.git
 ```
-
-Consult [INSTALLATION.md](INSTALLATION.md) for manual paths, discovery and troubleshooting. Agent Skills support varies by IDE; installation and automatic invocation are not universal guarantees.
-
-**Prompt example**
-
-> Use `aster-landing-design` to create an original, responsive landing page for my developer product. Keep the existing framework. Use atmospheric depth, accessible dark/light themes, an Acrylic-like menu overlay, Mica-like navigation and a clear primary CTA. Review the result against the skill's QA checklist.
-
-## Inside the skill
-
+Then place the extracted skill folder in a supported skills directory as described in INSTALLATION.md.
+Example prompt
+> Use `aster-landing-design` to create a professional responsive landing page for my SaaS product. Keep my existing framework. Use ASTER visual foundations, a dark/light theme strategy, restrained glass surfaces and a clear conversion flow.
+---
+Package structure
 ```text
 ASTER-Landing-Design/
-├── SKILL.md                     # Agent instructions & workflow
-├── README.md                    # Project overview
-├── INSTALLATION.md              # Supported installation approaches
+├── SKILL.md
+├── README.md
+├── INSTALLATION.md
 ├── LICENSE
 ├── assets/
-│   ├── aster-tokens.css         # Semantic colors, glass, themes
-│   └── landing-starter.html     # Functional HTML starter
-├── docs/images/                 # Editorial design previews
-│   ├── aster-desktop-preview.svg
-│   └── aster-mobile-preview.svg
+│   ├── aster-tokens.css
+│   └── landing-starter.html
+├── docs/
+│   ├── BRAND-IDENTITY.md
+│   └── brand/
+│       ├── aster-logo-icon-dark.svg
+│       ├── aster-logo-icon-light.svg
+│       └── aster-wordmark.svg
 ├── examples/
-│   └── prompts.md               # Practical prompt library
+│   └── prompts.md
 ├── references/
-│   ├── 01-foundations.md        # Tokens, typography, geometry
-│   ├── 02-layouts.md            # Page structures & conversion
-│   ├── 03-glass-materials.md    # Acrylic / Mica / transparency
-│   ├── 04-components.md         # Component contracts
-│   ├── 05-frameworks.md         # React, Vue, Svelte, Astro, HTML
-│   ├── 06-quality-checklist.md  # Accessibility, responsive QA
-│   └── 07-content-and-copy.md   # Content structure and SEO
+│   ├── 01-foundations.md
+│   ├── 02-layouts.md
+│   ├── 03-glass-materials.md
+│   ├── 04-components.md
+│   ├── 05-frameworks.md
+│   ├── 06-quality-checklist.md
+│   └── 07-content-and-copy.md
 └── scripts/
-    └── validate_skill.py       # Offline structural validation
+    └── validate_skill.py
 ```
-
-## Compatible workflows
-
-ASTER's instructions can guide work in **React, Next.js, Vue, Nuxt, Svelte, SvelteKit, Astro and plain HTML/CSS/JavaScript**. Existing styling systems such as Tailwind, CSS Modules and vanilla CSS should be preserved rather than replaced without consent.
-
-Use this skill to:
-- **Create** a differentiated landing page from a clear brief.
-- **Customize** an existing product identity without breaking its functionality.
-- **Refine** hierarchy, responsiveness, interaction and motion.
-- **Audit** against accessibility, performance and UX criteria.
-- **Document** design decisions and reusable tokens for ongoing maintenance.
-
-## Try the working starter
-
-The repository contains a small interactive landing starter with a responsive composition, glass panel and theme toggle. No build tool is required.
-
-```bash
-git clone https://github.com/TersanPlay/ASTER-Landing-Design.git
-cd ASTER-Landing-Design/assets
-# Open landing-starter.html in your browser
-```
-
-Keep `aster-tokens.css` in the same directory as the HTML file.
-
-### Screenshot production
-
-For authentic screenshots, run the starter in a browser and capture desktop (e.g. 1440×900) and mobile (e.g. 390×844) viewports. Replace or supplement the conceptual SVG previews with these PNGs and clearly label the source, viewport and capture date. Do not present vector mockups as browser captures.
-
-## Quality is a requirement
-
-A completed ASTER output should have functional CTAs, responsive layouts without horizontal overflow, correctly labelled forms, visible keyboard focus, sufficient contrast, purposeful motion and reduced-transparency fallback behavior. Run actual build, lint and test scripts when available and report any unverified items.
-
-See the [full quality checklist](references/06-quality-checklist.md) and [component contracts](references/04-components.md).
-
-## Validation
-
+---
+Included references
+Foundations — spacing, typography, color roles, motion and geometry.
+Layouts — landing-page structures and conversion patterns.
+Glass materials — Acrylic / Mica-like surfaces and fallback behavior.
+Components — UI contracts and composable building blocks.
+Frameworks — implementation guidance per stack.
+Quality checklist — acceptance criteria for design, accessibility and engineering.
+Content and copy — writing structure, SEO and narrative hierarchy.
+---
+Validation
 ```bash
 python scripts/validate_skill.py
 ```
-
-This verifies the skill's expected file structure and entrypoint metadata. It does **not** certify visual fidelity, browser support, runtime correctness or accessibility compliance.
-
-## Philosophy
-
-> **Atmosphere attracts. Structure guides. Clarity converts.**
-
-ASTER is an independent, original design approach informed by modern software interface conventions. It is not affiliated with DeepSeek, Microsoft or any other platform.
-
+This script verifies the expected structure of the ASTER skill package. It does not replace manual UI review, browser testing or accessibility verification.
 ---
-
-<div align="center">
-
-**ASTER Landing Design · Agent Skill v1.0.0**
-
-[Skill](SKILL.md) · [Installation](INSTALLATION.md) · [Reference Library](references/01-foundations.md) · [MIT License](LICENSE)
-
-</div>
+Philosophy
+> **Professional by default. Flexible by design. Clear in execution.**
+ASTER aims to help agents produce landing pages that look credible, feel polished and remain implementable across modern frontend environments.
